@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--폰트-->
+    <link
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!--css 파일이랑 연동-->
+    <link rel="styleSheet" type="text/css" href="style.css" />
+    <!--웹사이트 이름-->
+    <title>PLAN!T</title>
+    <!--AOS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+
+  <body>
+    <div>
+      <!--상단바 기본 셋팅-->
+      <img
+        src="images/logo.png"
+        style="
+          float: left;
+          margin-left: 102px;
+          margin-top: 0px;
+          width: 41px;
+          height: 31px;
+        "
+      />
+      <div class="frame">
+        <nav class="header">
+          <h3>
+            <a class="site-name" href="PLAN!T.html">PLAN!T</a>
+          </h3>
+          <ul class="nav_menu disable_mobile">
+            <li><a href="guide.html">가이드</a></li>
+            <li><a href="start.html">시작하기</a></li>
+          </ul>
+          <ul class="nav_menu_2">
+            <li class="maintain_width"><a href="login.html">로그인</a></li>
+            <li class="important maintain_width">
+              <a href="signup.html">가입</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!--main copy-->
+    <div
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1200"
+    >
+      <h3 class="main_copy">
+        PLAN!T과 <br />
+        함께하는 <br />
+        꼼꼼한 일정 관리
+      </h3>
+      <div>
+        <img id="check_img" src="images/check.png" />
+      </div>
+    </div>
+
+    <!--short guide-->
+    <div class="short_guide">
+      <img id="guide_color" src="images/guide.png" />
+      <!--밑에 배경색-->
+    </div>
+
+    <!--second copy-->
+    <div class="frame">
+      <h3 class="second_copy">
+        깜박하고 놓친 마감일 <br />
+        지나쳐버린 기념일 <br />
+        복잡한 시험일정 <br />.<br />.<br />.<br />
+      </h3>
+      <h5><br />한 번에 관리하세요</h5>
+      <div class="circles">
+        <div class="circle">
+          <img id="circle_image" src="images/hand.svg" />
+        </div>
+        <div class="circle">
+          <img id="circle_image_2" src="images/file.svg" />
+        </div>
+        <div class="circle">
+          <img id="circle_image" src="images/alarm.svg" />
+        </div>
+      </div>
+      <ul class="second_copy_2">
+        <li>손쉬운<br />일정관리 시스템</li>
+        <li>항목별 분류로<br />한눈에 보기쉽게</li>
+        <li>우선순위 설정과<br />마감 알림기능</li>
+      </ul>
+    </div>
+
+    <!--third copy-->
+    <div class="frame">
+      <img id="prototype" src="images/prototype.png" />
+      <img id="prototype_bg" src="images/prototype_bg.png" />
+      <h2>
+        대학생이 직접 만든<br />
+        대학생을 위한
+      </h2>
+      <h6 class="t_2">단 하나의 일정관리 서비스</h6>
+    </div>
+
+    <!--last copy-->
+    <div class="frame center">
+      <div class="red_check_container">
+        <img id="red_check" src="images/red_check.png" />
+        <a href="guide.html" class="last_copy">
+          <h6 class="last_copy">지금 바로 체험하기</h6>
+        </a>
+      </div>
+    </div>
+
+    <!--intro-->
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: "aos-init", // class applied after initialization
+        animatedClassName: "aos-animate", // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 400, // values from 0 to 3000, with step 50ms
+        easing: "ease", // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+      });
+    </script>
+  </body>
+</html>

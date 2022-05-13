@@ -1,0 +1,262 @@
+/* basic setting */
+
+* {
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  list-style: none;
+  text-decoration: none;
+  border-collapse: collapse;
+  margin: 0px;
+  padding: 0px;
+  color: black;
+}
+
+/* frame */
+body {
+  background-image: url("images/background_grid.png");
+  width: 100%;
+  height: 720px;
+}
+
+.frame {
+  margin: 25px 150px; /* 위아래 25px, 양옆 150px margin */
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+  .frame {
+    margin: 25px 25px;
+  }
+}
+
+/* header */
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.site-name {
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  font-size: 30px;
+  color: #6581e4;
+  /* font-style:italic; */
+}
+
+.nav_menu {
+  display: flex;
+  align-self: center;
+  position: absolute;
+  margin-left: 130px;
+  font-size: 18px;
+}
+
+.nav_menu > li {
+  margin-left: 20px;
+}
+
+.nav_menu_2 {
+  display: flex;
+  align-self: center;
+  font-size: 18px;
+}
+
+.nav_menu_2 > li {
+  margin-left: 25px;
+  border-style: solid;
+  border-color: #6581e4;
+  border-width: 1.5px;
+  border-radius: 8px;
+  padding: 3.5px; /* border랑 글자 간 공간 만들어주기*/
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.maintain_width {
+  min-width: 50px;
+  text-align: center;
+}
+
+li > a {
+  color: #6f6f6f; /* 검정 글자 이 색깔로 통일 */
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  .disable_mobile {
+    display: none;
+  }
+}
+
+/* main copy */
+.main_copy {
+  text-align: center; /* 중앙 배치 */
+  line-height: 120%; /* 글자 위아래 간격 */
+  position: relative;
+  top: 100px; /* 위부터 100px margin*/
+  font-weight: 640;
+  font-size: 55px;
+  color: #6581e4;
+}
+
+#check_img {
+  display: block;
+  margin: auto;
+  margin-top: 100px;
+  width: 217px;
+  height: 142px;
+}
+
+/* short guide */
+.short_guide {
+  position: relative;
+}
+
+#guide_color {
+  margin-top: 140px;
+  width: 100%;
+  height: 2350px;
+  position: absolute;
+}
+
+/* second copy */
+.second_copy {
+  text-align: center;
+  line-height: 120%;
+  position: relative;
+  margin-top: 300px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #f9f9f9;
+}
+
+h5 {
+  text-align: center;
+  line-height: 110%;
+  position: relative;
+  margin-top: 20px;
+  font-weight: 640;
+  font-size: 38px;
+  color: #f9f9f9;
+}
+
+#circle_image {
+  height: 100px;
+  width: 100px;
+  z-index: 2;
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+#circle_image_2 {
+  height: 100px;
+  width: 100px;
+  z-index: 2;
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-left: 47px;
+}
+
+.circles {
+  display: flex;
+  justify-content: "space-between";
+}
+
+.circle {
+  margin: 100px;
+  flex: 1;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  width: 150px;
+  height: 180px;
+  border-radius: 50%;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.second_copy_2 {
+  display: flex;
+  align-self: center;
+  font-size: 22px;
+  z-index: 1;
+}
+
+.second_copy_2 > li {
+  text-align: center;
+  font-weight: 320;
+  color: white;
+  margin: -50px 118px 0px 118px;
+}
+
+@media screen and (max-width: 600px) {
+  .circle {
+    margin: 30px;
+  }
+}
+
+/* third copy */
+
+#prototype {
+  width: 580px;
+  height: 430px;
+  position: absolute;
+  z-index: 2;
+  margin-top: 180px;
+}
+
+#prototype_bg {
+  width: 580px;
+  height: 430px;
+  position: absolute;
+  z-index: 1;
+  margin-top: 220px;
+  margin-left: 45px;
+}
+
+h2 {
+  position: absolute;
+  text-align: center;
+  line-height: 200%;
+  font-weight: 320;
+  color: white;
+  margin-top: 290px;
+  margin-left: 850px;
+}
+
+.t_2 {
+  position: absolute;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 210px;
+  color: white;
+  margin-top: 440px;
+  margin-left: 790px;
+}
+
+/* last copy */
+
+.red_check_container {
+  margin-top: 830px;
+  display: flex;
+  flex-direction: row;
+}
+
+.last_copy {
+  line-height: 110%;
+  font-weight: 640;
+  font-size: 38px;
+  color: #f9f9f9;
+  margin-top: 15px;
+  z-index: 1;
+}
+
+#red_check {
+  z-index: 1;
+}
+
+.center {
+  align-items: center;
+}
