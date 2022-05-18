@@ -1,0 +1,160 @@
+* {
+    font-family: "Spoqa Han Sans Neo", "sans-serif";
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    color: black;
+  }
+  
+  /* frame */
+  body {
+    background-image: url("images/background_grid.png");
+    width: 100%;
+    height: 720px;
+  }
+  
+  .frame {
+    margin: 25px 150px; /* 위아래 25px, 양옆 150px margin */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .frame {
+      margin: 25px 25px;
+    }
+  }
+  /* header */
+  .main_header{
+      width: 100%;
+      height: 58px;
+      background-color: #6581e4;
+  }
+  .main_header .icon1{
+      width: 41px;
+      height: 27px;
+      position: relative;
+      top: 15px;
+      left: 42px;
+  }
+  .main_header .icon2{
+    width: 33px;
+    height: 30px;
+      position: absolute;
+    top: 13px;
+    right: 132px;
+
+  }
+  .main_header .icon3{
+      width: 36px;
+      height: 32px;
+      position: absolute;
+      top: 12px;
+      right: 68px;
+    }
+    .main_header .icon4{
+        width: 5px;
+        height: 25px;
+        position: absolute;
+        top: 16px;
+      right:28px;
+    }
+    /* side menu */
+    .side_menu{
+        width: 300px;
+        height: 100%;
+        background-color: #e9eeff;
+        position: relative;
+    }
+    .side_menu p{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .side{
+        display: flex;
+        flex-direction: row;
+    }
+    .menu1{
+        position: relative;
+        top: 30.29px;
+        left: 46.08px;
+    }
+    .menu1 p{
+        padding: 3px 0 0 11.37px;
+    }
+    .line1{
+        position: absolute;
+        top: 79px;
+        left: 32px;
+    }
+    .menu2{
+        position: absolute;
+        top: 100px;
+        left: 46px;
+    }
+    .menu2 p{
+        padding: 3px 0 0 8px;
+    }
+    .menu3{
+        position: absolute;
+        top: 152px;
+        left: 49px;
+    }
+    .menu3 p{
+        padding: 1px 0 0 7px;
+    }
+    .menu4{
+        position: absolute;
+        top: 197px;
+        left: 46px;
+    }
+    .menu4 p{
+        padding-left: 8px;
+    }
+    .line2{
+        position: absolute;
+        top: 244px;
+        left: 32px;
+    }
+    .menu5{
+        position: absolute;
+        top: 263px;
+        left: 47px;
+    }
+    .menu5 p{
+        padding-left: 7px;
+    }
+    .menu6{
+        position: absolute;
+        top: 307px;
+        left: 47px;
+    }
+    .menu6 p{
+        padding-left: 7px;
+    }
+    .menu7{
+        position: absolute;
+        top: 348px;
+        left: 47px;
+    }
+    .menu7 p{
+        padding: 3px 0 0 7px;
+    }
+    .line3{
+        position: absolute;
+        top: 394px;
+        left: 32px;
+    }
+    .menu8{
+        position: absolute;
+        top: 415px;
+        left: 47px;
+    }
+    .menu8 p{
+        padding: 2px 0 0 7px;
+    }
