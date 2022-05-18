@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="styleSheet" type="text/css" href="plus_style.css" />
+    <!--css 파일이랑 연동-->
+    <title>PLAN!T</title>
+    <!--웹사이트 이름-->
+  </head>
+  <body>
+    <div>
+      <!--상단바 기본 셋팅-->
+      <img id="upper_rect" src="images/upper_rect.png" />
+      <div class="frame">
+        <nav class="header">
+          <a href="index.html">
+            <img
+              src="images/logo_white.png"
+              style="
+                float: left;
+                margin-left: -100px;
+                margin-top: -75px;
+                width: 41px;
+                height: 31px;
+              "
+          /></a>
+          <ul class="nav_menu_2">
+            <li class="+">
+              <a href="plus.html"><img src="images/+.png" /></a>
+            </li>
+            <li class="alarm"><img src="images/alarm.png" /></li>
+            <li class="user"><img src="images/user.png" /></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!--일정 추가-->
+    <div class="search">
+      <img id="s_bg" src="images/search_bg.png" />
+      <ul>
+        <li class="s">
+          *추가할 일정<br />
+          <br />
+          <input type="text" id="todo" />
+        </li>
+        <li class="s">
+          *날짜 및 시간 <br /><br />
+          <input type="datetime-local" />
+        </li>
+        <li class="s">
+          *카테고리 <br /><br />
+          <select id="category" onchange="changeCategoty();">
+            <option value="01">수업</option>
+            <option value="02">시험/과제</option>
+            <option value="03">알바</option>
+            <option value="04">동아리/스터디/학회</option>
+            <option value="05">기념일</option>
+            <option value="06">여행</option>
+            <option value="07">병원</option>
+            <option value="08">그외</option>
+          </select>
+        </li>
+      </ul>
+      <button type="button" onclick="regist();">등록</button>
+    </div>
+
+    <script>
+      function changeCategoty() {
+        let city_info = $("#city").val();
+        $("#region_02").hide();
+        $("#region_064").hide();
+        $("#region_" + city_info).show();
+      }
+      function regist() {
+        /* 버튼이랑 연결된 함수 */
+        alert(
+          "등록 완료했습니다."
+        ); /* 버튼 누르면 해당 문구가 경고창으로 뜸. */
+        /* document.getElementById("todo").value  사용자가 작성한 일정 정보가 뭔지 얻기 */
+      }
+    </script>
+  </body>
+</html>

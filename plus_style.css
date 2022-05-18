@@ -1,0 +1,101 @@
+/* basic setting */
+
+* {
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  list-style: none;
+  text-decoration: none;
+  border-collapse: collapse;
+  margin: 0px;
+  padding: 0px;
+  color: black;
+}
+
+/* frame */
+body {
+  background-image: url("images/background_grid.png");
+  width: 100%;
+  height: 720px;
+}
+
+#upper_rect {
+  width: 100%;
+  height: 56px;
+}
+
+.frame {
+  margin: 25px 150px; /* 위아래 25px, 양옆 150px margin */
+  display: flex;
+  flex-direction: column;
+}
+
+/* header */
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav_menu_2 {
+  display: flex;
+  align-self: center;
+  font-size: 18px;
+  margin-top: -120px;
+  margin-right: -70px;
+}
+
+.nav_menu_2 > li {
+  margin-left: 35px;
+}
+
+.user {
+  margin-top: 3px;
+}
+
+.maintain_width {
+  min-width: 50px;
+  text-align: center;
+}
+
+/* search */
+#s_bg {
+  display: block;
+  margin: 0px auto;
+  margin-top: 50px;
+}
+
+.s {
+  font-size: 20px;
+  color: #3b3b3b;
+  margin-bottom: -10px;
+  margin-top: -200px;
+  font-weight: 550;
+  text-align: center;
+}
+
+input {
+  font-size: 25px;
+  color: #a0a0a0;
+  border: none;
+}
+
+select {
+  font-size: 25px;
+  color: #a0a0a0;
+  border: none;
+}
+
+button {
+  background-color: #6581e4;
+  font-size: 22px;
+  color: rgb(255, 255, 255);
+  display: block;
+  margin: 0px auto;
+  margin-top: 240px;
+  border: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 550;
+  border-radius: 10px;
+}
